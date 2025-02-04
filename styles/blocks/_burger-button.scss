@@ -16,8 +16,9 @@
         content: '';
         width: 50%;
         height: 2px;
+        color: var(--color-dark);
         background-color: var(--color-dark);
         border-radius: 5px;
-        box-shadow: 0 -8px black, 0 8px black;
+        box-shadow: 0 -8px, 0 8px;
     }
 }
