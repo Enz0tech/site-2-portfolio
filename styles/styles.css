@@ -233,7 +233,6 @@ h3, .h3 {
   border: none;
   width: 48px;
   aspect-ratio: 1;
-  color: var(--color-dark);
   position: relative;
   border-radius: var(--border-radius-small);
 }
@@ -257,7 +256,7 @@ h3, .h3 {
   height: 2px;
   background-color: var(--color-dark);
   border-radius: 5px;
-  box-shadow: 0 -8px, 0 8px;
+  box-shadow: 0 -8px black, 0 8px black;
 }
 
 .header__inner {
