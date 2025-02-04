@@ -1,0 +1,26 @@
+.button {
+    @include flex-center(true);
+
+    height: var(--button-height);
+    padding-inline: 50px;
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    border: var(--border);
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+
+    @include hover {
+        color: var(--color-dark);
+        background-color: var(--color-accent-alt);
+    }
+
+    &--small {
+        --buttonHeightSmall: 51px;
+
+        height: var(--buttonHeightSmall);
+
+        @include tablet {
+            --buttonHeightSmall: 45px;
+        }
+    }
+}

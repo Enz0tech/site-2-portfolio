@@ -1,0 +1,24 @@
+:root {
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+    --color-dark-alt: #292929;
+    --color-accent: #01996D;
+    --color-accent-alt: #01996D20;
+    --color-gray: #424242;
+    --color-gray-alt: #484848;
+
+    --border: 1px solid #01996d;
+    --border-radius-small: 4px;
+    --border-radius: 12px;
+    --border-radius-large: 18px;
+
+    --font-family-base: "Lato", sans-serif;
+
+    --container-width: 1370px;
+    --container-padding-x: 20px;
+    --section-padding-y: 80px;
+
+    --button-height: 65px;
+
+    --transition-duration: 0.2s;
+}
