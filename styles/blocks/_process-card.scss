@@ -1,0 +1,20 @@
+.process-card {
+    max-width: 392px;
+    padding-top: 80px;
+
+    &__title {
+        position: relative;
+        left: 72px;
+
+        &::before {
+            position: absolute;
+            top: -131px;
+            left: -86px;
+
+            content: '0' counter(custom-counter);
+            color: var(--color-accent-alt);
+            font-weight: 400;
+            font-size: 5em;
+        }
+    }
+}

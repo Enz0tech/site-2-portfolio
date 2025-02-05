@@ -1,0 +1,39 @@
+.section {
+    padding-bottom: calc(var(--section-padding-y) * 2);
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 136px;
+    }
+
+    &__title {
+        position: relative;
+        max-width: 584px;
+        width: 100%;
+        color: var(--color-accent);
+
+        &::before {
+            position: absolute;
+            content: attr(data-title);
+            top: -40px;
+            font-family: var(--font-family-base);
+            font-size: 24px;
+            color: var(--color-gray);
+            font-weight: 600;
+            line-height: 1.57;
+        }
+    }
+
+    &__description {
+        max-width: 731px;
+        width: 100%;
+        font-weight: 500;
+    }
+
+    &__hero {
+        min-height: 895px;
+        background: url("../image/hero-bg.png") 70% no-repeat;
+    }
+}

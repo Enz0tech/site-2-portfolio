@@ -1,0 +1,15 @@
+.process {
+    padding-top: 52px;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        column-gap: 95px;
+        counter-reset: custom-counter;
+        list-style: none;
+    }
+
+    &__item {
+        counter-increment: custom-counter;
+    }
+}
