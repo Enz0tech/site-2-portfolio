@@ -25,7 +25,7 @@ a {
     color: var(--color-dark-alt);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Georgia", sans-serif;
     font-weight: 700;
 }
@@ -39,5 +39,5 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    @include fluid-text(30, 26);
+    @include fluid-text(30, 22);
 }

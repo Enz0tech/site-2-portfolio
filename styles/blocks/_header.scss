@@ -1,8 +1,8 @@
 .header {
 
+
     &__inner {
-        padding-top: 31px;
-        padding-bottom: 17px;
+        min-height: var(--header-height);
         display: flex;
         justify-content: space-between;
         align-items: center;

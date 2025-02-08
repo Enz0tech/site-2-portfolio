@@ -1,5 +1,6 @@
 .hero {
-    padding-top: 175px;
+    // margin-inline: 275px;
+    margin-inline: clamp(10px, 14.3vw, 275px);
     
     &__body {
         display: flex;

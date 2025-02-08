@@ -1,10 +1,21 @@
 .process-card {
     max-width: 392px;
     padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+
+    @include tablet {
+        row-gap: 20px;
+    }
+
+    &__description {
+        font-weight: 500;
+    }
 
     &__title {
         position: relative;
-        left: 72px;
+        left: 81px;
 
         &::before {
             position: absolute;
@@ -16,5 +27,17 @@
             font-weight: 400;
             font-size: 5em;
         }
+
+        &:not(:last-child) {
+            margin-bottom: 55px;
+    
+            @include tablet {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &__image {
+        height: auto;
     }
 }

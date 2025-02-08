@@ -1,5 +1,10 @@
 .process {
     padding-top: 52px;
+    overflow-x: hidden;
+
+    @include tablet {
+        padding-top: 25px;
+    }
 
     &__list {
         display: flex;
@@ -7,9 +12,28 @@
         column-gap: 95px;
         counter-reset: custom-counter;
         list-style: none;
+
+        @include desktop {
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
     }
 
     &__item {
         counter-increment: custom-counter;
+
+        &:nth-child(2) .process-card {
+            padding-top: 286px;
+
+            @include tablet {
+                padding-top: 80px;
+            }
+        }
+
+        &:nth-child(3) .process-card__title {
+            padding-left: 35px;
+            left: 100px;
+        }
     }
 }
