@@ -53,4 +53,17 @@
         min-height: calc(100vh - var(--header-height));
         background: url("../image/hero-bg.png") center no-repeat;
     }
+
+    &__story {
+        padding: 229px 207px 177px;
+        background-color: var(--color-bg);
+
+        @include desktop {
+            padding: 150px 80px 80px;
+        }
+
+        @include mobile {
+            padding: 70px 20px 60px;
+        }
+    }
 }

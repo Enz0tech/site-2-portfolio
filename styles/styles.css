@@ -107,6 +107,7 @@ svg * {
   --color-accent-alt: #01996D20;
   --color-gray: #424242;
   --color-gray-alt: #484848;
+  --color-bg: #245852;
   --border: 1px solid #01996d;
   --border-radius-small: 4px;
   --border-radius: 12px;
@@ -481,6 +482,20 @@ h3, .h3 {
   min-height: calc(100vh - var(--header-height));
   background: url("../image/hero-bg.png") center no-repeat;
 }
+.section__story {
+  padding: 229px 207px 177px;
+  background-color: var(--color-bg);
+}
+@media (max-width: 1280px) {
+  .section__story {
+    padding: 150px 80px 80px;
+  }
+}
+@media (max-width: 767px) {
+  .section__story {
+    padding: 70px 20px 60px;
+  }
+}
 
 .hero {
   margin-inline: clamp(10px, 14.3vw, 275px);
@@ -586,4 +601,79 @@ h3, .h3 {
 }
 .process-card__image {
   height: auto;
+}
+
+.story {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media (max-width: 1280px) {
+  .story {
+    flex-wrap: wrap;
+    row-gap: 35px;
+  }
+}
+.story__body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 57px;
+}
+@media (max-width: 1280px) {
+  .story__body {
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .story__body {
+    row-gap: 20px;
+  }
+}
+.story__header {
+  color: var(--color-light);
+}
+.story__title:not(:last-child) {
+  margin-bottom: 33px;
+}
+.story__description {
+  font-weight: 600;
+  font-size: 25px;
+}
+@media (hover: hover) {
+  .story__button:hover {
+    color: var(--color-light);
+  }
+}
+@media (hover: none) {
+  .story__button:active {
+    color: var(--color-light);
+  }
+}
+.story__video-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.story__video {
+  width: 100%;
+  max-width: 895px;
+  height: auto;
+  border-radius: var(--border-radius-large);
+}
+.story__video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-color: transparent;
+  border: none;
+}
+@media (max-width: 767px) {
+  .story__video-play-button {
+    width: 70px;
+    aspect-ratio: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */
