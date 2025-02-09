@@ -1,4 +1,6 @@
 .our-product-card {
+    --marginBottomProductCard: 16px;
+
     position: absolute;
     bottom: -83px;
     left: 0px;
@@ -25,6 +27,8 @@
 
     @include mobile-s {
         width: 180px;
+        bottom: -49px;
+        left: 9px;
     }
 
     &__description {
@@ -74,7 +78,11 @@
         font-size: 15px;
 
         &:not(:last-child) {
-            margin-bottom: 16px;
+            margin-bottom: var(--marginBottomProductCard);
+        }
+
+        @include mobile {
+            --marginBottomProductCard: 7px;
         }
     }
 
@@ -85,8 +93,13 @@
     }
 
     &__item {
+        
         &:not(:last-child) {
-            margin-bottom: 16px;
+            margin-bottom: var(--marginBottomProductCard);
+        }
+
+        @include mobile {
+            --marginBottomProductCard: 7px;
         }
     }
 }
