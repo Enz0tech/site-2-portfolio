@@ -1,0 +1,46 @@
+.our-product {
+    display: flex;
+    column-gap: 86px;
+    justify-content: center;
+    position: relative;
+    padding-left: 60px;
+
+    @include desktop {
+        column-gap: 20px;
+    }
+
+    @include tablet {
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    &__image {
+        border-radius: var(--border-radius-large);
+        height: auto;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 40px;
+
+        @include tablet {
+            row-gap: 15px;
+        }
+    }
+
+    &__header {
+        padding-top: 35px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__description {
+        width: 100%;
+        max-width: 538px;
+    }
+}
