@@ -1,0 +1,32 @@
+.footer {
+    background-color: var(--color-bg);
+    min-height: 645px;
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        padding-top: 95px;
+    }
+
+    &__menu {
+        
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 60px;
+        }
+
+        &-link {
+            @include reset-link;
+
+            color: var(--color-light);
+            font-weight: 600;
+            font-size: 25px;
+
+            @include hover {
+                color: var(--color-accent);
+            }
+        }
+    }
+}

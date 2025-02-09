@@ -1,5 +1,4 @@
 .hero {
-    // margin-inline: 275px;
     margin-inline: clamp(10px, 14.3vw, 275px);
     
     &__body {
@@ -23,5 +22,10 @@
         max-width: 420px;
         height: 123px;
         color: var(--color-gray-alt);
+
+        @include mobile {
+            color: var(--color-light);
+            text-shadow: 1px 1px var(--color-dark);
+        }
     }
 }

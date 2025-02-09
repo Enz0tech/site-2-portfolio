@@ -1,6 +1,4 @@
 .header {
-
-
     &__inner {
         min-height: var(--header-height);
         display: flex;
@@ -20,6 +18,8 @@
         }
 
         &-link {
+            @include reset-link;
+
             position: relative;
             font-weight: 500;
             display: inline-flex;
